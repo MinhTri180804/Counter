@@ -1,9 +1,9 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { CounterManager } from './components/counter-manager/counter-manager';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [CounterManager],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
