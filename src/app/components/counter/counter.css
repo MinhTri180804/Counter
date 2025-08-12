@@ -1,0 +1,58 @@
+:host {
+  /* Related action of counter */
+  --border-color-action: #000;
+  --color-action: #000;
+  --border-radius-action: 4px;
+
+  /* Related value of counter */
+  --value-color: #000;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.counter__title {
+  font-size: 24px;
+}
+
+.counter__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+button.counter__content__action-minus,
+button.counter__content__action-plus {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--border-color-action);
+  color: var(--color-action);
+  border-radius: var(--border-radius-action);
+  cursor: pointer;
+}
+
+.counter__content__value {
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--value-color);
+}
+
+.counter__double {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter__double-value {
+  font-size: 18px;
+}

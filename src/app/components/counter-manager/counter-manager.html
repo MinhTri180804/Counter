@@ -1,0 +1,33 @@
+<div class="counter__manager">
+  <div class="counter__list">
+    <app-counter
+      [counter]="firstCounter()"
+      (decrementEvent)="handleFirstCounterDecrement()"
+      (incrementEvent)="handleFirstCounterIncrement()"
+      nameCounter="Biến đếm 1"
+    ></app-counter>
+
+    <app-counter
+      [counter]="secondCounter()"
+      (decrementEvent)="handleSecondCounterDecrement()"
+      (incrementEvent)="handleSecondCounterIncrement()"
+      nameCounter="Biến đếm 2"
+    ></app-counter>
+  </div>
+
+  <div class="counter__actions">
+    <button
+      class="counter__action-decrement-all"
+      (click)="handleDecrementAll()"
+    >
+      Tất cả giảm 1
+    </button>
+
+    <button
+      class="counter__action-increment--all"
+      (click)="handleIncrementAll()"
+    >
+      Tất cả thêm 1
+    </button>
+  </div>
+</div>

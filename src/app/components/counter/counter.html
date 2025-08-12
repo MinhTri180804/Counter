@@ -1,0 +1,22 @@
+<div class="counter">
+  <h4 class="counter__title">{{ nameCounter() }}</h4>
+  <div class="counter__content">
+    <button class="counter__content__action-minus" (click)="handleDecrement()">
+      <app-minus-icon-component></app-minus-icon-component>
+    </button>
+
+    <div class="counter__content__value">
+      {{ counter() }}
+    </div>
+
+    <button class="counter__content__action-plus" (click)="handleIncrement()">
+      <app-plus-icon-component></app-plus-icon-component>
+    </button>
+  </div>
+  <div class="counter__double">
+    <app-x-icon-component></app-x-icon-component>
+    <div class="counter__double-value">
+      {{ doubleCounter() }}
+    </div>
+  </div>
+</div>
